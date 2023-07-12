@@ -15,8 +15,7 @@ void loop() {
     char buffer[BUFFER_SIZE];
     int bytesRead = Serial.readBytesUntil('\n', buffer, BUFFER_SIZE);
 
-    // Process the received data as needed
-    // For example, you can print it back to the serial monitor
+    // Echo the data back
     Serial.print("Received data: ");
     for (int i = 0; i < bytesRead; i++) {
       Serial.print(buffer[i]);
